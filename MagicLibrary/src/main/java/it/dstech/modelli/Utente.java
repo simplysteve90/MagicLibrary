@@ -10,7 +10,7 @@ public class Utente {
 	private double fondo;
 	private List<Collezione> collezione;
 
-	public Utente(String username, String password, String ruolo, double fondo, List<Collezione> collezione) {
+	public Utente(String username, String password, String ruolo, double fondo) {
 		super();
 		this.username = username;
 		this.password = password;
