@@ -90,4 +90,17 @@ public class GestioneDataBase {
 		return listaLibri;
 	
 }
+
+	public void modificaLibro( String nuovoTitolo, String titolo, String autore, double costo, int qtavendita, int qtanoleggio) throws SQLException {
+		PreparedStatement prep= connessione.prepareStatement("update libro set titolo=?, costo=?, qtavendita=?, qtanoleggio=?, autore=? where titolo=?;	");
+		prep.setString(1, nuovoTitolo);
+		prep.setDouble(2, costo);
+		prep.setInt(3, qtavendita);
+		prep.setInt(4, qtanoleggio);
+		prep.setString(5, autore);
+		prep.setString(6, titolo);
+		
+		prep.execute();
+		
+	}
 }

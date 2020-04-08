@@ -47,17 +47,17 @@
 	<br>
 	<label for="libro" ><b>Scegli il Libro</b></label>
 	<br><br>
-	<select size="4" style= "width: 25%">
+	<select size="4" style= "width: 25%" name="titolo" id="titolo">
 	
 	<%for (Libro libro:lista){ %>
 	
-	 <option name= "libro"><%=libro.getTitolo() %></option>
+	 <option ><%=libro.getTitolo() %></option>
 	 <%} %>
 	</select>
 	<br><br>
-	<label for="titolo"><b>Cambia Titolo</b></label>
+	<label for="nuovoTitolo"><b>Cambia Titolo</b></label>
 	<br>
-	<input type= "text" name="titolo" style="width:50%">
+	<input type= "text" name="nuovoTitolo" style="width:50%">
 	<br>
 	<label for="autore"><b>Cambia Autore</b></label>
 	<br>

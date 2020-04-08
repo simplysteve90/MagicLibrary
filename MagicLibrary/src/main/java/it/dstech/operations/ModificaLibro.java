@@ -26,11 +26,16 @@ public class ModificaLibro extends HttpServlet {
 		int qtavendita= Integer.parseInt(req.getParameter("qtavendita"));
 		int qtanoleggio= Integer.parseInt(req.getParameter("qtanoleggio"));
 		String azione= req.getParameter("connessione");
-		String libro= req.getParameter("libro");
+		String nuovoTitolo= req.getParameter("nuovoTitolo");
+	
+		
+		
 		try {
 			GestioneDataBase conn = new GestioneDataBase();
 
-			if(azione.equals("1")) {
+			if(azione.equals("1")) { 
+				
+				conn.modificaLibro( nuovoTitolo, titolo, autore, costo, qtavendita, qtanoleggio);
 				
 				
 			}else if(azione.equals("2")) {
