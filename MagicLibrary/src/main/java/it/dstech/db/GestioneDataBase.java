@@ -110,8 +110,10 @@ public class GestioneDataBase {
 	}
 
 	public void rimuoviLibro(String titolo) throws SQLException {
-		PreparedStatement prep = connessione.prepareStatement("delete from libro where titolo=?;");
-		prep.setString(1, "titolo");
+		PreparedStatement prep= connessione.prepareStatement("delete from libro where titolo=?;");
+		prep.setString(1, titolo);
 		prep.execute();
 	}
+
+	
 }

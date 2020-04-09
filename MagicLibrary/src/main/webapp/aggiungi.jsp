@@ -5,20 +5,24 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="static/style.css">
+
 </head>
 <body>
 <form action="aggiungi" method="post">
-<label for="titolo">Titolo</label>
-<input type= "text" name= "titolo">
-<label for="titolo">Autore</label>
-<input type= "text" name= "autore">
-<label for="costo">Costo</label>
-<input type= "number" name= "costo">
-<label for="qtavendita">Quantita Da Vendere</label>
-<input type= "number" name= "qtavendita">
-<label for="titolo">Quantita Da Noleggiare </label>
-<input type= "number" name= "qtanoleggio">
-<button type= "submit" name="connessione" value= "1">Completa</button>
+<label for="titolo"><b>Titolo</b></label><br>
+<input type= "text" name= "titolo"><br>
+<label for="titolo"><b>Autore</b></label><br>
+<input type= "text" name= "autore"><br>
+<label for="costo"><b>Costo</b></label><br>
+<input type= "number" step="any" name= "costo"><br><br>
+<label for="qtavendita"><b>Quantita Da Vendere</b></label><br>
+<input type= "number" name= "qtavendita"><br><br>
+<label for="titolo"><b>Quantita Da Noleggiare</b></label><br>
+<input type= "number" name= "qtanoleggio"><br><br>
+
+
+<button type= "submit" name="connessione" value= "1"><b>Completa</b></button>
 
 
 </form>
