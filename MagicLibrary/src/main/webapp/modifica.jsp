@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Modifica Libro</title>
 <link rel="stylesheet" type="text/css" href="static/style.css">
 
 </head>

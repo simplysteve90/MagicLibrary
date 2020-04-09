@@ -28,7 +28,8 @@ protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws S
 			req.setAttribute("lista", conn.stampaLibri());
 			req.getRequestDispatcher("/modifica.jsp").forward(req, resp);
 		}else if(azione.equals("3")) {
-			req.getRequestDispatcher("/rimuovi.jsp").forward(req, resp);
+			req.setAttribute("lista", conn.stampaLibri());
+			req.getRequestDispatcher("/rimuovilibro.jsp").forward(req, resp);
 		}
 		
 	} catch (Exception e) {
